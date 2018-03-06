@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Template</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('button').click(function() {
+                var name = $('#username').val();
+                var grade = $('#usergrade').val();
+                var color = $('#usercolor').val();
+
+                var hobby = $('#userhobby').val();
+                var insta = $('#userinsta').val();
+
+                var story = 'Hello my is ' + name + '. I am in the ' + grade + ' grade.' + ' My favorite color is ' + color + '. My favorite hobby is ' + hobby + '. I would like to to be friends, add me on Instagram ' + insta
+
+                $('p').html(story);
+
+
+            })
+
+        });
+    </script>
+    <style>
+        p {
+            text-align: center;
+
+        }
+
+        div {
+            border: solid 10px;
+            width: 300px;
+            height: 150px;
+            padding-top: 20px;
+            margin: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    First Name/Nick Name and Last Name: <input id="username"><br> Grade: <input id="usergrade"><br> Favorite color: <input id="usercolor"><br> Favorite Hobby: <input id="userhobby"><br> Instagram name:<input id="userinsta"><br>
+    <button>SUBMIT!</button>
+    <div>
+        <p></p>
+    </div>
+
+</body>
+
+</html>
